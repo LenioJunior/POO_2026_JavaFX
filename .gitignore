@@ -1,1 +1,6 @@
 .superpowers/
+docker/data/**
+target/**
+.vscode/**
+.classpath
+.project
