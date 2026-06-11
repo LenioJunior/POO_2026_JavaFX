@@ -11,7 +11,4 @@ services:
     ports:
       - "1433:1433"
 
-    volumes:
-      - ./data:/var/opt/mssql
-
     restart: unless-stopped

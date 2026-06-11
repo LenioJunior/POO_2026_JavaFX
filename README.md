@@ -32,8 +32,18 @@ O sistema permite o cadastro e gerenciamento de usuários de uma biblioteca (Alu
 | [JavaFX Support](https://marketplace.visualstudio.com/items?itemName=shrey150.javafx-support) | Fixes "Language Support for Java(TM) by Red Hat" when using JavaFX | Shrey Pandya |
 | [XML](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-xml) | XML Language Support by Red Hat | Red Hat |
 
+---
+
+## Configuração do Visual Code
+
+- Utilizar a opção **Ctrl + Shift + P** — Preferences - Open User Settings (JSON)
+- Ir até o final do arquivo e adicionar uma vírgula no final da última linha 
+- Colar o texto: **"javafx.sceneBuilder.path": "/opt/scenebuilder/bin/SceneBuilder"**
+- Lembre-se de ajustar o texto colado para a pasta onde foi feita o download.
+- Se a instalação foi executada pelo script, será na pasta do usuário, dentro de Downloads/Tools, onde terá uma pasta SceneBuilder
 
 ---
+
 
 ## Arquitetura
 
@@ -140,7 +150,7 @@ Isso sobe um container SQL Server na porta `1433` com o banco `JavaFX` criado au
 ### 2. Executar a aplicação
 
 ```bash
-./mvnw javafx:run
+mvn javafx:run
 ```
 
 O Spring Boot criará/atualizará as tabelas automaticamente via `spring.jpa.hibernate.ddl-auto=update`.
@@ -148,7 +158,7 @@ O Spring Boot criará/atualizará as tabelas automaticamente via `spring.jpa.hib
 ### 3. Executar os testes
 
 ```bash
-./mvnw clean test
+mvn clean test
 ```
 
 ---
