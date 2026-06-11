@@ -24,6 +24,17 @@ O sistema permite o cadastro e gerenciamento de usuários de uma biblioteca (Alu
 
 ---
 
+## Extensões do Visual Studio Code
+
+| Extensão | Descrição | Publicador |
+|---|---|---|
+| [FXML Language Mode](https://marketplace.visualstudio.com/items?itemName=sosuisha.fxml-language-mode) | Language support for FXML (JavaFX) files | sosuisha |
+| [JavaFX Support](https://marketplace.visualstudio.com/items?itemName=shrey150.javafx-support) | Fixes "Language Support for Java(TM) by Red Hat" when using JavaFX | Shrey Pandya |
+| [XML](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-xml) | XML Language Support by Red Hat | Red Hat |
+
+
+---
+
 ## Arquitetura
 
 A aplicação usa um padrão de integração Spring + JavaFX:
